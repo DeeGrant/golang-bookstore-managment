@@ -11,7 +11,7 @@ func ParseBody(r *http.Request, x interface{}) {
 	if err != nil {
 		// do something?
 	}
-	err = json.Unmarshal([]byte(body), x)
+	err = json.Unmarshal(body, x)
 	if err != nil {
 		return
 	}
